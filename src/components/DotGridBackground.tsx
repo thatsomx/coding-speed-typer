@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 
 /**
  * Griglia di pallini disegnata su canvas (performante anche con centinaia di punti).

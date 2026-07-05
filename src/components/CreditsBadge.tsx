@@ -1,5 +1,3 @@
-import React from 'react';
-
 /**
  * Piccolo riquadro credits fisso in basso a destra, visibile su ogni schermata.
  */

@@ -1,4 +1,3 @@
-import React from 'react';
 import type { Duration } from '../types';
 
 interface HowToPlayModalProps {

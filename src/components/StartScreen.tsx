@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import type { Language, Duration } from '../types';
 import { LANGUAGE_LABELS, DURATION_OPTIONS } from '../types';
 import GlowButton from './GlowButton';

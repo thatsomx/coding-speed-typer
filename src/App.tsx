@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import { useMemo, useState } from 'react';
 import type { Language, Screen, TestResult, Duration } from './types';
 import { generateTypingText } from './data/codeSnippets';
 import StartScreen from './components/StartScreen';
