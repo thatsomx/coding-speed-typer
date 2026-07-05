@@ -1,75 +1,73 @@
-# React + TypeScript + Vite
+# ⌨️ Coding Speed Typin
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Un test di velocità di digitazione pensato per chi programma: invece di
+parole a caso, scrivi vere righe di codice. L'idea è semplice — prendere il
+concept di MonkeyType e portarlo nel mondo dello sviluppo, con un'estetica
+ispirata a un editor come VS Code.
 
-Currently, two official plugins are available:
+🔗 **Prova la demo live:** [coding-speed-typer-i53nsm3u7-thatsomxx.vercel.app](https://coding-speed-typer-i53nsm3u7-thatsomxx.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+![Anteprima](./src/Screenshot.png)
 
-## React Compiler
+## 👋 Il progetto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Ciao, sono Omar! Studente di Informatica all'Università di Pisa, con un
+interesse particolare per l'incontro tra sviluppo Front-End e Design
+UI/UX. Questo è uno dei miei primi progetti personali, nato per mettere in
+pratica in modo concreto quello che sto imparando — HTML5, CSS3,
+JavaScript/TypeScript — con un occhio di riguardo per la cura dell'interfaccia
+e dell'esperienza utente, non solo per la logica dietro le quinte.
 
-## Expanding the ESLint configuration
+## ✨ Funzionalità
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 🌐 Scelta del linguaggio: JavaScript, TypeScript, Python, Java o C++
+- ⏱️ Durata del test selezionabile: 30 / 45 / 60 / 120 secondi
+- 🔴 Countdown di 3 secondi con anteprima del codice sottostante
+- ⌨️ Feedback visivo in tempo reale (carattere corretto, errore, non ancora scritto)
+- 📊 Resoconto finale dinamico: WPM, precisione, errori, caratteri corretti,
+  ciascuno con un piccolo ⓘ che spiega cosa significa
+- 🎬 Transizioni fluide fra le schermate (View Transition API)
+- 🎨 Estetica ispirata a un editor di codice: palette scura, puntini di
+  sfondo reattivi al mouse, bottoni con effetto luminoso reattivo
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Stack & strumenti usati
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- **Web Development:** React, TypeScript, Vite
+- **UI/UX & Visual:** Design system scuro custom, animazioni CSS, View
+  Transition API, Canvas API (per lo sfondo interattivo)
+- **Strumenti:** Git/GitHub, Vercel (deploy continuo)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 💻 Sviluppo in locale
 
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Apri `http://localhost:5173` (o la porta indicata nel terminale).
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📦 Build di produzione
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+npm run build
+npm run preview   # per testare la build in locale
 ```
+
+## 🌐 Deploy
+
+Il sito è pubblicato gratuitamente su **Vercel**, collegato direttamente a
+questa repo: ogni push su `main` genera automaticamente un nuovo deploy.
+È incluso anche un workflow (`.github/workflows/deploy-pages.yml`) per
+pubblicare in alternativa su GitHub Pages.
+
+## 📄 Licenza
+
+Distribuito con licenza [MIT](./LICENSE): puoi usarlo, modificarlo e
+distribuirlo liberamente.
+
+Non è richiesta alcuna attribuzione, ma se questo progetto ti è stato utile
+una ⭐ alla repo o una email a **oechcherrate@gmail.com** mi farebbe piacere!
+
+---
+
+🔗 GitHub: [@thatsomx](https://github.com/thatsomx)
